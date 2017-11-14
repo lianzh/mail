@@ -70,19 +70,22 @@ class MailHelper
         return $ret;
     }
 
-    public static function thisIsExample(Email $mail)
+    public static function thisIsExample(MailHelper $mailHelper, $to=null)
     {
         $subject = '系统出错了,亲';
-        $to = [
-            'xiaoming@demo.com'
-        ];
+
+        if (empty($to)) {
+            $to = [
+                'xiaoming@demo.com'
+            ];
+        }        
 
         $htmlBody = '<h2 style="color:#ff0000">擦,尼玛系统又出故障了,具体看附件</h2>';
         $attachData = [
                 '我是附件数据', 'alert.txt', '尼玛看这里.txt'
             ];
 
-        $mail->sendmail($to, $subject, $htmlBody, $attachData);
+        $mailHelper->sendmail($to, $subject, $htmlBody, $attachData);
     }
 
 }
