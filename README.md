@@ -1,4 +1,4 @@
-# mail
+# LianzhMail
 a quick mail send php lib
 
 ```
