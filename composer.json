@@ -1,0 +1,31 @@
+{
+    "name": "lianzh/mail",
+    "description": "a quick mail send php lib",
+    "keywords": ["mail", "php"],
+    "license": "Apache License Version 2.0",
+    "homepage": "https://github.com/lianzh/mail",
+    "support": {
+        "issues": "https://github.com/lianzh/mail/issues",
+        "source": "https://github.com/lianzh/mail"
+    },
+    "authors": [
+        {
+            "name": "toohamster",
+            "email": "449211678@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "ext-mbstring": "*",
+        "swiftmailer/swiftmailer": "~4.2|~5.0"
+    },
+    "require-dev": {
+        
+    },
+    "autoload": {
+        "classmap": [],
+        "files": [],
+        "psr-4": {"LianzhMail\\": "src"}
+    },
+    "minimum-stability": "dev"
+}
