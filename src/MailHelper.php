@@ -14,6 +14,7 @@ namespace LianzhMail;
     'encryption' => 'ssl',
     'username' => "yourname",
     'password' =>"yourpass",
+    'timeout' =>"30",
     // 'sendmail' => '/usr/sbin/sendmail -bs',#When using the "sendmail" driver to send e-mails
     'pretend' => 1,#启用此选项,邮件不会真正发送,而是写到日志文件中
     // 'logger'     => \Psr\Log\LoggerInterface , #使用日志对象

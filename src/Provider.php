@@ -73,6 +73,11 @@ class Provider
 			$transport->setUsername($config['username']);
 			$transport->setPassword($config['password']);
 		}
+		
+		if (!empty($config['timeout']))
+		{
+			$transport->setTimeout($config['timeout']);
+		}
 
 		return $transport;
 	}
